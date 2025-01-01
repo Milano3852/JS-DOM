@@ -1,0 +1,107 @@
+/* Общий стиль */
+body {
+    font-family: 'Poppins', sans-serif; /* Используем современный шрифт */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #2b5876, #4e4376);
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.4); /* Полупрозрачный фон */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  header nav {
+    margin-top: 10px;
+  }
+  
+  nav a {
+    color: #ffe600;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ff80b0;
+    transform: scale(1.1);
+  }
+  
+  /* Основные элементы */
+  section {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+  
+  button {
+    background: #ffe600;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #4e4376;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background: #ff80b0;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Кастомный курсор */
+  #cursor {
+    width: 15px;
+    height: 15px;
+    background: #ffe600;
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.1s ease;
+    box-shadow: 0 0 10px rgba(255, 230, 0, 0.7);
+  }
+  
+  /* Canvas для анимации */
+  canvas {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    nav a {
+      font-size: 1rem;
+      margin: 0 10px;
+    }
+  
+    button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  }
+  
